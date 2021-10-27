@@ -1,0 +1,35 @@
+@import "reset.css";
+@import "landing-page/nav-bar.css";
+@import "landing-page/content-area.css";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    background: black;
+}
+
+.container-2{
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+}
+.container-3{
+    width: 100%;
+    background: #f5f5f5;
+}
+

@@ -1,0 +1,160 @@
+/* Nav */
+
+.blue-btn{
+    height: 35px;
+    width: 138px;
+    background: #0f79db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3px;
+    border-radius: 3px;
+}
+.blue-btn:hover {
+    background: #074987;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+    color: white;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding:  5px 0;
+    font-size: 15px;
+}
+
+.main-nav a {
+    color: gray;
+}
+.main-nav a:hover {
+    color: #fff;
+}
+.main-nav .blue-btn  {
+    color: #fff;
+}
+.main-nav{
+    width: 100%;
+    max-width: 1172px;
+    margin: 0px 200px;
+}
+
+.main-nav .logo {
+    width: 110px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li{
+    padding: 10px 10px;
+}
+
+/* Nav-2 */
+.second-nav{
+    width: 100%;
+    max-width: 1172px;
+    margin: 0px 200px;
+}
+.second-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    padding:  5px 0;
+    font-size: 15px;
+}
+.second-nav .explore {
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+.second-nav ul{
+    display: flex;
+}
+.second-nav ul li{
+    padding: 10px 10px;
+}
+
+.second-nav a{
+    color: grey;
+}
+.second-nav a:hover {
+    color: black;
+}
+
+@media(max-width: 700px){
+    .main-nav{
+        margin: 0 0 0 20px;
+    }
+    .main-nav ul li {
+        display: none;
+    }
+    .main-nav .blue-btn {
+        margin-right: 90px;
+    }
+    .menu-btn{
+        display: block;
+        top: 22px;
+    }
+    .menu.btn:hover{
+        opacity: .9;
+    }
+    .second-nav{
+        margin: 0 0 0 20px;
+        font-size: 15px;
+        justify-content: space-between;
+    }
+    .second-nav .explore {
+        font-size: 1.3rem;
+    }
+    .second-nav ul{
+        margin-right: 40px;
+        
+    }
+        
+}
+
+
+@media(max-width: 500px){
+    .main-nav{
+        margin: 0 20px 0 20px;
+    }
+    .main-nav ul li {
+        display: none;
+    }
+    .main-nav .blue-btn {
+        margin-right: 90px;
+    }
+    .menu-btn{
+    display: block;
+    top: 22px;
+    }
+    .menu-btn:hover{
+        opacity: .9;
+    }
+    .second-nav{
+        margin: 0 0 0 20px;
+        font-size: 13px;
+    }
+    .second-nav .explore {
+        font-size: 1.3rem;
+    }
+    
+}
+

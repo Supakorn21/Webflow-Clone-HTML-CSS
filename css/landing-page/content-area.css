@@ -1,0 +1,157 @@
+/* content-area */
+.head-area{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding:  5px 0;
+    font-size: 20px;
+}
+.head-area{
+    width: 100%;
+    max-width: 1172px;
+    margin: 0px 200px;
+}
+.head-area ul{
+    display: flex;
+}
+.head-area ul li{
+    padding: 10px 10px;
+    margin-right: 5px;
+    font-size: 19px;
+}
+
+.head-area a{
+    color: grey;
+}
+.head-area a:hover{
+    color: black;
+}
+
+.head-area ul li:nth-child(1){
+    padding: 10px 10px 10px 3px;
+}
+
+/* content-area */
+.content-area {
+    width: 100%;
+    height: 100%;
+    max-width: 1172px;
+    margin: 0px 200px;
+    padding: 0 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.content-box{
+    border:1px solid grey ;
+    width: 270px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1535446937720-e4cad0145efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.content-box:nth-child(2){
+    background: url(https://images.unsplash.com/photo-1635226881671-96587caf8928?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(3){
+    background: url(https://images.unsplash.com/photo-1633114128814-11fac33f707b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(4){
+    background: url(https://images.unsplash.com/photo-1635205410945-ecd09994877f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1882&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(5){
+    background: url(https://images.unsplash.com/photo-1635176591840-a847f5787e4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1827&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(6){
+    background: url(https://images.unsplash.com/photo-1635197170388-9495fba460a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(7){
+    background: url(https://images.unsplash.com/photo-1635198416132-0c9401b8b80e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80) no-repeat center center;
+    background-size: cover;
+}
+.content-box:nth-child(8){
+    background: url(https://images.unsplash.com/photo-1634992989077-25522e7ffbc1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80) no-repeat center center;
+    background-size: cover;
+}
+.info-text{
+    color: white;
+    text-align: center;
+}
+.container-3 .content-area .content-box img{
+    object-fit: cover;
+}
+
+.status-box{
+    position: absolute;
+    top: 239px;
+    width: 100%;
+    height: 36px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.user-info{
+    width: 270px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 270px;
+    padding: 10px 0 30px 0;
+}
+.content-area .content-box a{
+    padding: 0 10px;
+    color: grey;
+}
+.content-area .content-box a:hover{
+    color: rgb(90, 90, 90);
+}
+
+.container-3  .content-area img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.blue-text{
+    color: blue;
+}
+
+@media(max-width: 700px){
+    .head-area {
+        margin: 0px 20px;
+    }
+    .content-area{
+        grid-template-columns: 1fr;
+        margin: 0px 20px;
+        justify-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    .head-area {
+        margin: 0px 20px;
+    }
+    .content-area{
+        grid-template-columns: 1fr;
+        margin: 0px 20px;
+        justify-items: center;
+    }
+}
+
+
+
+
